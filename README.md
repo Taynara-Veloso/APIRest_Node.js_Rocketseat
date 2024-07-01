@@ -57,3 +57,29 @@
   ```
   npm i eslint @rocketseat/eslint-config -D
   ```
+
+## Knex
+```
+npm install knex sqlite3
+```
+
+## My First Migration
+
+### migrations é um controlador de versão dentro do nosso banco de dados
+
+Assim como você usa sistemas de controle de versão como o Git para gerenciar alterações no seu código-fonte, você pode usar migrações para manter o controle das alterações no banco de dados. Com migrações, você pode transferir seu banco de dados existente para outro estado e vice-versa: Essas transições de estado são salvas em arquivos de migração, que descrevem como chegar ao novo estado e como reverter as alterações para voltar ao estado antigo.
+
+### configurando migrations
+
+* criando arquivo knexfile.js `(importando as configurações do banco e exportando)`
+
+* Configurando package.json
+```json
+"scripts": {
+  "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js",
+}
+```
+```js
+//para criar a migration
+npm run knex -- migrate:make create-documents
+```
