@@ -88,7 +88,26 @@ Assim como você usa sistemas de controle de versão como o Git para gerenciar a
   "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js",
 }
 ```
-```js
-//para criar a migration
-npm run knex -- migrate:make create-documents
+### Para criar a migration
+```bash
+npm run knex -- migrate:make nome-da-migration
 ```
+
+### Executar migration 
+```bash
+npm run knex -- migrate:latest
+```
+
+### Para desfazer uma migration e poder alterar
+```bash
+npm run knex -- migrate:rollback
+```
+
+#### Extensão DotEnv
+Dotenv é um módulo de dependência zero que carrega variáveis ​​de ambiente de um .envarquivo em process.env. Armazenar a configuração no ambiente separada do código é baseado na metodologia The Twelve-Factor App .
+
+[Documentação](https://www.npmjs.com/package/dotenv)
+```bash
+npm i dotenv
+```
+---
