@@ -2,6 +2,15 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
+### Executando Projeto
+```
+npm run dev
+```
+### Navegador 
+```
+localhost:3333/home
+```
+
 * Criar Pasta do projeto
 * Criar o arquivo package.json
   ```
