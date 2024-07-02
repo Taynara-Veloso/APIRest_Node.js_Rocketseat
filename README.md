@@ -111,3 +111,60 @@ Dotenv é um módulo de dependência zero que carrega variáveis ​​de ambien
 npm i dotenv
 ```
 ---
+## Questions and Answers
+### Qual é o principal objetivo da biblioteca Zod?
+```
+Validar tipos e formatos de dados
+```
+### Como é possível acessar uma variável ambiente em um programa escrito em JavaScript?
+```
+Usando a variável global process.env
+```
+### Em que situações é importante usar variáveis ambiente?
+```
+* Quando há informações sensíveis, como senhas ou tokens, que precisam ser mantidas em segredo
+* Quando há configurações que precisam ser alteradas entre diferentes ambientes sem modificar o código-fonte
+```
+### O que são variáveis ambiente?
+```
+Variáveis que só existem em determinado ambiente, como o desenvolvimento ou produção
+```
+### Qual é o método do Knex para realizar uma query de seleção de todos os registros de uma tabela?
+```
+knex...select()
+```
+### Qual é o método do Knex para realizar uma query de inserção em uma tabela?
+```
+knex...insert()
+```
+### Qual é o comando do Knex para reverter a última migration aplicada?
+```
+knex migrate:rollback
+```
+### Qual é o comando do Knex para rodar todas as migrations pendentes?
+```
+knex migrate:latest
+```
+### Qual é o comando do Knex para criar uma nova migration?
+```
+knex migrate:make
+```
+### Por que é importante usar migrations ao invés de modificar diretamente o esquema do banco de dados?
+```
+* Porque migrations ajudam a manter a integridade dos dados
+* Porque migrations permitem rollback de modificações
+* Porque migrations tornam o processo de atualização do banco de dados mais fácil
+* Porque migrations são mais rápidas que modificações diretas
+```
+### O que são migrations?
+```
+São scripts que modificam o esquema do banco de dados
+```
+### Com um query builder é possível trocar de banco de dados sem modificar as querys?
+```
+Depende da documentação e da compatibilidade do query builder com outros bancos de dados.
+```
+### Qual é a principal vantagem de usar um query builder em vez de um driver nativo no Node.js?
+```
+Um query builder é mais fácil de usar e oferece uma API mais intuitiva
+```
