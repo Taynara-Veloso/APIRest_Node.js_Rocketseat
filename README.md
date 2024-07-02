@@ -68,6 +68,11 @@ localhost:3333/home
   ```
 
 ## Knex
+é um construtor de consultas SQL "com baterias incluídas" para PostgreSQL , CockroachDB , MSSQL , MySQL , MariaDB , SQLite3 , Better-SQLite3 , Oracle e Amazon Redshift, projetado para ser flexível, portátil e divertido de usar.
+
+Ele apresenta retornos de chamada de estilo de nó tradicionais , bem como uma interface de promessa para controle de fluxo assíncrono mais limpo, uma interface de fluxo , construtores de esquema e consulta completos , suporte a transações (com pontos de salvamento) , pool de conexões e respostas padronizadas entre diferentes clientes de consulta e dialetos.
+
+[Documentação](https://knexjs.org/)
 ```
 npm install knex sqlite3
 ```
