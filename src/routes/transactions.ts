@@ -5,8 +5,13 @@ import { randomUUID } from "node:crypto";
 
 export async function transactionsRoutes(app: FastifyInstance) {
 
-  app.post('/', async (request, reply) => {
+  app.get('/', async () => { //listar todas as transações
+    const transactions = await knex('transactions').select()
 
+    return { transactions }
+  })
+
+  app.post('/', async (request, reply) => {
     const createTransactionBodySchema = z.object({
       title: z.string(),
       amount: z.number(),
