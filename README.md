@@ -21,7 +21,7 @@ localhost:3333/home
 ## RN (Regra de Negócio)
 
 - [x] A transação pode ser do tipo crédito que somará ao valor total, ou débito que subtrairá;
-- [] Deve ser possível identificarmos o usuário entre as requisições;
+- [x] Deve ser possível identificarmos o usuário entre as requisições;
 - [] O usuário só pode visualizar transações no qual ele criou;
 
 ## RNF (Requisitos Não Funcionais) - técnologias que iremos utilizar para realizar os objetivos acima.
@@ -188,4 +188,14 @@ Depende da documentação e da compatibilidade do query builder com outros banco
 ### Qual é a principal vantagem de usar um query builder em vez de um driver nativo no Node.js?
 ```
 Um query builder é mais fácil de usar e oferece uma API mais intuitiva
+```
+## Cookies com Fastify
+
+[Documentação](https://www.npmjs.com/package/@fastify/cookie)
+
+#### O que são cookies e para que serve?
+  Cookies de HTTP, ou cookies da Internet, são desenvolvidos especificamente para que navegadores da Web rastreiem, personalizem e salvem informações sobre a sessão de cada usuário. "Sessão" é a palavra usada para definir a quantidade de tempo que você passa em um site.
+
+```
+npm i @fastify/cookie
 ```
