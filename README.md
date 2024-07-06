@@ -230,3 +230,41 @@ app.register(transactionsRoutes, { // plugin
   prefix: 'transactions',
 })
 ```
+## Questions and answers
+
+### O que são requisitos funcionais?
+```
+Características do sistema que devem ser atendidas para atingir seus objetivos
+```
+### No Fastify, como configuramos rotas com um path em comum?
+```
+Utilizando o método `register` para registrar um plugin que contém todas as rotas com o mesmo path
+```
+### Para que serve o termo declare module no TypeScript?
+```
+Para declarar módulos personalizados
+```
+### Como você pode criar tipos personalizados para representar suas tabelas e colunas no TypeScript?
+```
+Escrevendo manualmente as definições de tipos
+```
+### Como podemos acessar os cookies enviados por um cliente no Fastify?
+```
+request.cookies
+```
+### É possível configurar opções para os Cookies, como o tempo de expiração, ao escrever um cookie no Fastify?
+```
+Sim, passando um objeto com as opções como terceiro parâmetro da função
+```
+### O que é o preHandler no Fastify?
+```
+Uma função que é executada antes de uma rota
+```
+### Os contextos dentro de um plugin no Fastify são isolados entre eles.
+```
+Verdadeiro
+```
+### O que são Hooks no contexto do Fastify?
+```
+Funções que são executadas de acordo ao hook configurado.
+```
