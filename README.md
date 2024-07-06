@@ -199,3 +199,14 @@ Um query builder é mais fácil de usar e oferece uma API mais intuitiva
 ```
 npm i @fastify/cookie
 ```
+
+### Configurando um hook global
+[Documentação](https://fastify.dev/docs/latest/Reference/Hooks/#prehandler)
+
+* `addHook:` Função para adicionar um hook específico no ciclo de vida do Fastify
+
+```js
+app.addHook('preHandler', async (request) => {
+  console.log(`[${request.method}] ${request.url}`)
+})
+```
