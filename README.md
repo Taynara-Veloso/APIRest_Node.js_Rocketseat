@@ -210,3 +210,23 @@ app.addHook('preHandler', async (request) => {
   console.log(`[${request.method}] ${request.url}`)
 })
 ```
+
+### Plugins no Fastify
+
+O Fastify permite que o usuário estenda sua funcionalidade com plugins. Um plugin pode ser um conjunto de rotas, um decorador de servidor etc...
+
+[Documentação](https://fastify.dev/docs/latest/Reference/Plugins/#plugins)
+
+```js
+import fastify from 'fastify'
+import cookie from '@fastify/cookie'
+import { transactionsRoutes } from './routes/transactions'
+
+const app = fastify()
+
+app.register(cookie) // plugin
+
+app.register(transactionsRoutes, { // plugin
+  prefix: 'transactions',
+})
+```
