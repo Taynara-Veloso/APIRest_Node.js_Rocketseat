@@ -289,3 +289,5 @@ Vamos aprender:
 
 #### Pirâmide de testes 
   * É uma estratégia que se baseia em ter mais testes unitários e menos testes de integração e e2e, pois testes unitários são mais rápidos e fáceis de escrever e manter do que outros tipos de testes.
+
+![image description](./assets/piramideTestes.png)
