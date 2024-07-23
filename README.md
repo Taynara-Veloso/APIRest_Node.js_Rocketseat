@@ -291,3 +291,38 @@ Vamos aprender:
   * É uma estratégia que se baseia em ter mais testes unitários e menos testes de integração e e2e, pois testes unitários são mais rápidos e fáceis de escrever e manter do que outros tipos de testes.
 
 ![image description](./assets/piramideTestes.png)
+
+### Vitest
+[Documentação](https://vitest.dev/)
+* install
+```bash
+npm i vitest -D
+```
+* Run teste
+```bash
+npm test
+```
+* criar pasta test
+* criando meu primeiro teste
+
+### `beforeAll`
+
+É uma função que é executada uma única vez antes de todos os testes. É útil para inicializar recursos compartilhados que serão utilizados pelos testes.
+
+### `beforeEach`
+
+É uma função que é executada antes de cada teste. É útil para preparar o ambiente antes da execução de cada teste, por exemplo, inicializar variáveis ou limpar o banco de dados.
+
+### `afterAll`
+
+É uma função que é executada uma única vez após todos os testes terem sido executados. É útil para limpar recursos compartilhados ou fechar conexões abertas.
+
+### `afterEach`
+
+É uma função que é executada após cada teste. É útil para limpar o ambiente depois da execução de cada teste, por exemplo, limpar variáveis ou fechar conexões com o banco de dados.
+
+
+´´´
+npm i supertest -D
+npm i -D @types/supertest
+´´´

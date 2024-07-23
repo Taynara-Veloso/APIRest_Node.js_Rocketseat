@@ -4,6 +4,12 @@ import { z } from "zod";
 import { randomUUID } from "node:crypto";
 import { checkSessionIdExists } from "../middlewares/check-session-id-exists";
 
+//Testes
+//unitários: unidade da sua aplicação
+//Integração: comunicação entre duas ou mais unidades
+//e2e(ponta-a-ponta): simula um usuário operando na nossa aplicação
+  //frontend: abre a página de login, digite o texto taynara...@hotmail.com no campo com id (simulando passo a passo do usuário)
+  //backend: chamadas HTTP, WebSockets, 
 export async function transactionsRoutes(app: FastifyInstance) {
 
   app.get('/', { preHandler: [checkSessionIdExists] }, async (request) => { //listar todas as transações
